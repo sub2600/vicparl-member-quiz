@@ -1,18 +1,26 @@
 # VicParl Member Quiz
 
-Repository-ready reconstruction of the VicParl member-learning prototype.
+Adaptive learning prototype for Victorian Parliament reporters.
 
-## Image folders
-Place Assembly images in `images/LA/` and Council images in `images/LC/`. Keep the existing Parliament-style filenames where practical, e.g. `AddisonJuliana_P.jpeg`.
-
-## Modes
+## Current prototype
 - Flashcards
-- Image-to-name quiz
-- Admin entry stored locally in the browser
+- Quiz: Name with progressive optional hints: House, electorate/region, then multiple choice
+- Quiz: Electorate / Region, beginning with free recall and offering multiple-choice assistance
+- My Progress stored locally in the browser between sessions
 - Escape key returns to the home screen
+- Chamber-aware visual design
 
-## Important
-This reconstructed build is based on recovered project requirements and conversation history. It is not claimed to be a byte-for-byte copy of any earlier generated file. The starter member record is only for testing image wiring.
+## Palette
+- Legislative Assembly: rgb(0, 90, 54)
+- Legislative Council: rgb(124, 26, 34)
+- Admin: rgb(32, 21, 71)
+- Main stage / government blue: rgb(0, 76, 151)
 
-## GitHub Pages
-After uploading, enable Pages from repository Settings > Pages, deploying from the main branch/root.
+## Images
+Assembly: `images/LA/`  
+Council: `images/LC/`
+
+Current test record expects `images/LA/AddisonJuliana_P.jpeg`.
+
+## Note
+Progress is deliberately browser-local in this prototype. It does not create reporter accounts or send performance data to GitHub.
